@@ -1,0 +1,3 @@
+NumeroDeControl|Nombre|ApellidoPaterno|ApellidoMaterno|Edad|Sexo|Carrera|Semestre
+1|Emmanuel Francisco|Ramirez|Hernandez|25|Masculino|Sistemas|7
+2|Paquito|Hernandez|Gonzales|45|Indefinido|Sistemas|12

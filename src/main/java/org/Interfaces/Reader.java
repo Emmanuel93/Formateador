@@ -1,5 +1,9 @@
 package org.Interfaces;
 
-public interface Reader {
+import java.util.List;
+
+public interface Reader<T extends Entity> {
+
+    public List<T> getFile();
 
 }
