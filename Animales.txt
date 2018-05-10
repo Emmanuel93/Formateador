@@ -1,2 +1,2 @@
-Id|Nombre|
-1|Yuyin|
+Id|Nombre|Sexo
+1|Yuyin|MASCULINO

@@ -3,6 +3,9 @@ package classes;
 import lombok.Data;
 import org.Interfaces.Entity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Data
 public class Alumno implements Entity{
 
@@ -41,7 +44,25 @@ public class Alumno implements Entity{
         this.nombre = "Emmanuel";
     }
 
+
+    @Override
+    public List<String> getAtributes() {
+        ArrayList<String> atributes = new ArrayList<>();
+        atributes.add("numeroDeControl");
+        atributes.add("nombre");
+        atributes.add("apellidoPaterno");
+        atributes.add("apellidoMaterno");
+        atributes.add("edad");
+        atributes.add("sexo");
+        atributes.add("carrera");
+        atributes.add("semestre");
+
+        return atributes;
+    }
+
     public String toString(){
-        return this.numeroDeControl+"->"+this.nombre;
+        return  this.numeroDeControl +","+this.nombre+","+this.apellidoPaterno +","
+                + this.apellidoMaterno +","+ this.edad+"," + this.sexo+","
+                + this.carrera + "," +this.semestre;
     }
 }

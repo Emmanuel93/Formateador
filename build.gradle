@@ -14,5 +14,9 @@ dependencies {
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.0.1'
     compile group: 'com.fasterxml', name: 'jackson-module-json-org', version: '0.9.1'
     compileOnly 'org.projectlombok:lombok:1.16.20'
+    compile group: 'org.w3c', name: 'dom', version: '2.3.0-jaxb-1.0.6'
+    compile group: 'com.opencsv', name: 'opencsv', version: '3.7'
+
+
 
 }

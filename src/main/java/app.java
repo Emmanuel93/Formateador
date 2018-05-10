@@ -8,20 +8,17 @@ public class app {
 
         ReaderFile<Alumno> read = new ReaderFile<Alumno>(Alumno.class,Alumno.fileName);
         List<Alumno> alumnos = read.getFile();
-        alumnos.stream()
-                .forEach(x ->{
-                    System.out.println(x);
-                });
 
-        ReaderFile<Animal> read2 = new ReaderFile<Animal>(Animal.class,Animal.fileName);
-        List<Animal> animales = read2.getFile();
-        animales.stream()
-                .forEach(x ->{
-                    System.out.println(x);
-                });
+        System.out.println("Alumnos!");
+        System.out.println();
+        FileWritter obj = new FileFactory();
 
-        //FileWritter obj = new FileFactory();
-        //File json = obj.giveMeAfile("JSON", alumnos);
+        File json = obj.giveMeAfile("JSON", alumnos,"Alumnos");
+        //File xml = obj.giveMeAfile("XML", alumnos,"Alumnos");
+        File csv = obj.giveMeAfile("CSV", alumnos,"Alumnos");
+
+        System.out.println();
+
     }
 
 }
