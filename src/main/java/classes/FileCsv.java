@@ -29,7 +29,7 @@ public class FileCsv extends File {
             }
 
             fileWriter.write(csv);
-            System.out.println("archivo creado");
+            System.out.println("csv creado");
 
         }catch(Exception e){
             System.out.println("archivo no creado");

@@ -14,7 +14,7 @@ public class app {
         FileWritter obj = new FileFactory();
 
         File json = obj.giveMeAfile("JSON", alumnos,"Alumnos");
-        //File xml = obj.giveMeAfile("XML", alumnos,"Alumnos");
+        File xml = obj.giveMeAfile("XML", alumnos,"Alumnos");
         File csv = obj.giveMeAfile("CSV", alumnos,"Alumnos");
 
         System.out.println();

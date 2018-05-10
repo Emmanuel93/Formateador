@@ -23,7 +23,7 @@ public class FileJson extends File {
         try {
             String json = mapper.writeValueAsString(entities);;
             mapper.writeValue(new java.io.File(this.ruta+".json"),json);
-            System.out.println(json);
+            System.out.println("json creado");
         }catch (JsonProcessingException e){
             e.printStackTrace();
         } catch (IOException e) {

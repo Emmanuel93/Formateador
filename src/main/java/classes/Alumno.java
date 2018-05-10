@@ -3,10 +3,12 @@ package classes;
 import lombok.Data;
 import org.Interfaces.Entity;
 
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.ArrayList;
 import java.util.List;
 
 @Data
+@XmlRootElement
 public class Alumno implements Entity{
 
     public static final String fileName = "Alumnos.txt";
@@ -64,5 +66,20 @@ public class Alumno implements Entity{
         return  this.numeroDeControl +","+this.nombre+","+this.apellidoPaterno +","
                 + this.apellidoMaterno +","+ this.edad+"," + this.sexo+","
                 + this.carrera + "," +this.semestre;
+    }
+
+    public String toXml(){
+        return "<Alumno>"+
+                "<numeroDeControl>"+this.numeroDeControl+"</numeroDeControl>"+
+                "<nombre>"+this.nombre+"</nombre>"+
+                "<apellidoPaterno>"+this.apellidoPaterno+"</apellidoPaterno>"+
+                "<apellidoMaterno>"+this.apellidoMaterno+"</apellidoMaterno>"+
+                "<edad>"+this.edad+"</edad>"+
+                "<sexo>"+this.apellidoPaterno+"</sexo>"+
+                "<carrera>"+this.apellidoPaterno+"</carrera>"+
+                "<semestre>"+this.apellidoPaterno+"</semestre>"+
+                "</Alumno>";
+
+
     }
 }
